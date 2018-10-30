@@ -13,3 +13,48 @@
    Supporting Files: 
 
 */
+
+/* sets the background color to brown that fades to green then back to brown */
+html {
+    background: linear-gradient(rgb(102, 62, 9), rgb(3, 78, 32), rgb(102, 62, 9));
+}
+
+/* vertically centering the page */
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 960px;
+    min-width: 640px;
+    height: 100%;
+    background: white;
+}
+
+/* displays the image inside the header as a block with a width of 100% */
+header img {
+    display: block;
+    width: 100%;
+}
+
+/* clears the footer of any floating content, sets the background color to a green that fades to brown */
+footer {
+    clear: both;
+    background: linear-gradient(rgb(3, 78, 32), rgb(102, 62, 9));
+}
+
+/* prevents container colapse for the footer,navs with a class of vertical navigation nested inside the footer are being floated to the left with a width of 22%,*/
+footer::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+footer>nav.verticalNavigation {
+    float: left;
+    width: 22%
+}
+
+footer>section#contactInfo {
+    float: left;
+    width: 34%;
+}
