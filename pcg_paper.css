@@ -27,7 +27,7 @@ body {
     max-width: 960px;
     min-width: 640px;
     height: 100%;
-    background: white;
+    background-color: rgb(53, 98, 42);
 }
 
 /* displays the image inside the header as a block with a width of 100% */
@@ -49,12 +49,25 @@ footer::after {
     display: table;
 }
 
+/* this is affecting the nav with the class of verticalNavigation that is a direct child of the footer to float left and have a width of 22% */
 footer>nav.verticalNavigation {
     float: left;
     width: 22%
 }
 
+/* this is affecting the section element  that is  */
 footer>section#contactInfo {
     float: left;
     width: 34%;
+}
+
+nav.vnav ul li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+footer nav ul li a:link,
+footer nav ul li a:visited {
+    color: black;
 }
